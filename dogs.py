@@ -1,5 +1,9 @@
- # Class Attribute
-    species = 'mammal'
+# Class Attribute
+name =input("please enter a test string")
+print(name)
+
+class Dog:
+    species = "mammal"
 
     # Initializer / Instance Attributes
     def __init__(self, name, age):
