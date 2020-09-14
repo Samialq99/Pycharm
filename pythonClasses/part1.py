@@ -3,18 +3,18 @@ import part2
 
 class Coin:
     def __init__(self):
-        self.__sideup = 'heads'
+        self.__sideup1 = 'heads'
 
     # the init method is used in python to initialize all objects attribs
     # the self word tells function you are working on this objects
     def toss(self):
         if random.randint(0, 1) == 0:
-            self.__sideup = 'Heads'
+            self.__sideup1 = 'Heads'
         else:
-            self.__sideup = 'Tails'
+            self.__sideup1 = 'Tails'
 
     def get_sideup(self):
-        return self.__sideup
+        return self.__sideup1
 
 
 
@@ -45,6 +45,10 @@ def main():
     print(Savingsacct.get_Balance())
 # name = input("what is your name ?")
 # print(name)
+    text1 = "Functional printing"
+    text2 = 'Python "Programming"'
+    text4 = f"{text1} {text2}"
+    print(text4)
 
 
 main()
